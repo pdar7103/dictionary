@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>                                                                               
+<resources>                                                                                                          
+    <declare-styleable name="JustifiedTextView">                                                                     
+        <attr name="Jtext" format="string" localization="suggested"/>                                                 
+        <attr name="JtextColor" format="color|reference" />                                                           
+        <attr name="JbackgroundColor" format="color|reference" />                                                     
+        <attr name="JtextSize" format="integer" min="1" />                                                            
+    </declare-styleable>
+</resources> 

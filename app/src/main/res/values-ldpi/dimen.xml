@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="header_txt_size">19dp</dimen>
+    <dimen name="txt_size">16dp</dimen>
+    <dimen name="normal_txt_size">15dp</dimen>
+    <dimen name="small_txt_size">12dp</dimen>
+    <dimen name="list_txt_size">10dp</dimen>
+    <dimen name="circle_height">72dp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+    <dimen name="view_txt_size">7dp</dimen>
+    <dimen name="padding">6dp</dimen>
+    <dimen name="small_margin">3dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="big_margin">14dp</dimen>
+
+    <!-- Dialog -->
+    <dimen name="dialog_padding_bottom">24dp</dimen>
+    <dimen name="dialog_margin_top">70dp</dimen>
+    <dimen name="dialog_lost_pwd_margin">100dp</dimen>
+    <dimen name="dialog_add_note_margin">115dp</dimen>
+    <dimen name="dialog_logout_margin">70dp</dimen>
+    <dimen name="dialog_add_file_margin">100dp</dimen>
+    <dimen name="dialog_add_ph_margin">130dp</dimen>
+    <dimen name="dialog_margin_top_minus">-27dp</dimen>
+
+    <!-- Dashboard Screen -->
+
+    <integer name="column">2</integer>
+
+    <dimen name="dash_icon">20dp</dimen>
+    <dimen name="list_icon">40dp</dimen>
+
+    <!-- Login/Register -->
+    <dimen name="small_size">25dp</dimen>
+    <dimen name="circle_1">155dp</dimen>
+    <dimen name="circle_2">130dp</dimen>
+    <dimen name="circle_3">110dp</dimen>
+    <dimen name="circle_4">85dp</dimen>
+    <dimen name="login_margin">24dp</dimen>
+    <dimen name="or_img">28dp</dimen>
+     <dimen name="or_bronch">14dp</dimen>
+    <dimen name="tri_width">145dp</dimen>
+    <dimen name="tri_height">85dp</dimen>
+    <dimen name="login_circle_img">80dp</dimen>
+
+    <!-- School group -->
+    <dimen name="circle_width">48dp</dimen>
+    <dimen name="round_width">60dp</dimen>
+
+    <!-- Create Group -->
+    <dimen name="ll_height">60dp</dimen>
+    <dimen name="margin_top">30dp</dimen>
+    <dimen name="circle_margin_top">26dp</dimen>
+    <dimen name="group_img_res">45dp</dimen>
+
+    <!-- Add Participants -->
+    <dimen name="layout_height">181dp</dimen>
+    <dimen name="ll_width">48dp</dimen>
+
+    <!-- Add Happygram -->
+    <dimen name="l_height">180dp</dimen>
+    <dimen name="main_height">210dp</dimen>
+
+    <!-- My Phone Chain -->
+    <dimen name="txt_height">32dp</dimen>
+    <dimen name="phone_height">185dp</dimen>
+    <dimen name="phone_main_height">210dp</dimen>
+    <dimen name="edit_height">21dp</dimen>
+    <dimen name="raw_margine">16dp</dimen>
+    <dimen name="square">24dp</dimen>
+<dimen name="margineline">32dp</dimen>
+<dimen name="round">40dp</dimen>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d1281e</color>
+    <color name="colorPrimaryDark">#bd180d</color>
+    <color name="colorAccent">#00000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="ihop_title_color">#4286f4</color>
+    <color name="ihop_title_color_dark">#bd180d</color>
+    <color name="indexer_bar_bg_color">#40000000</color>
+    <color name="indexer_bar_selected_color">#3399ff</color>
+    <color name="letter_bg_color">#1C86EE</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey_color">#F0F0F0</color>
+    <color name="dark_grey">#C9C8CC</color>
+    <color name="header_grey">#D4D3D7</color>
+</resources>

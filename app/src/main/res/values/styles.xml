@@ -1,0 +1,61 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="linedraw">
+
+        <!-- Customize your theme here. -->
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+
+    <style name="menulinear">
+
+        <!-- Customize your theme here. -->
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/small_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="menutext">
+
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">@dimen/small_margin</item>
+        <item name="android:layout_margin">@dimen/small_margin</item>
+        <item name="android:textSize">@dimen/normal_txt_size</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="menuimg">
+
+        <!-- Customize your theme here. -->
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:layout_width">@dimen/small_size</item>
+        <item name="android:layout_margin">@dimen/small_margin</item>
+        <item name="android:layout_height">@dimen/small_size</item>
+    </style>
+
+</resources>

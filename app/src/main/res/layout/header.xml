@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/ihop_title_color"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_menuitem"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txt_height"
+        android:layout_weight="0.1"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/txtheader"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_weight="0.7"
+        android:lines="1"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:visibility="visible" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextheader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/margin"
+        android:layout_weight="0.7"
+        android:background="@drawable/seacrchviewbackground"
+        android:gravity="center_vertical"
+        android:hint="search"
+        android:padding="@dimen/small_padding"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black_overlay"
+        android:textColorHint="@color/header_grey"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/normal_txt_size"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txt_height"
+        android:layout_weight="0.1"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/search"
+        android:visibility="visible" />
+
+</LinearLayout>

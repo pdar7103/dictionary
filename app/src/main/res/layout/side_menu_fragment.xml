@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.2"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:layout_width="@dimen/round_width"
+                android:layout_height="@dimen/round_width"
+                android:background="@drawable/logo"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@color/ihop_title_color"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_home"
+                style="@style/menulinear" >
+
+                <ImageView
+                    style="@style/menuimg"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    style="@style/menutext"
+                    android:text="Home" />
+            </LinearLayout>
+
+            <View style="@style/linedraw" />
+
+            <LinearLayout
+                android:id="@+id/ll_fav"
+                style="@style/menulinear" >
+
+                <ImageView
+                    style="@style/menuimg"
+                    android:src="@drawable/favselected" />
+
+                <TextView
+                    style="@style/menutext"
+                    android:text="favorite" />
+            </LinearLayout>
+
+            <View style="@style/linedraw" />
+
+            <LinearLayout
+                android:id="@+id/ll_share"
+                style="@style/menulinear" >
+
+                <ImageView
+                    style="@style/menuimg"
+                    android:src="@drawable/sharemenu" />
+
+                <TextView
+                    style="@style/menutext"
+                    android:text="Share App" />
+            </LinearLayout>
+
+            <View style="@style/linedraw" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

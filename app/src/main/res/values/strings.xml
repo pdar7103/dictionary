@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+        <!--ca-app-pub-3940256099942544/9214589741</string>-->
+    <string name="title_activity_splash">Accounting Dictionary</string>
+
+</resources>
