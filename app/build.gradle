@@ -17,7 +17,7 @@ android {
 // use for production debug and release build
         Accounting {
             // production app name
-            applicationId "com.dworld.accounting"
+            namespace "com.dworld.accounting"
             //if you want change application name  and app icon so you define
             // resValue, manifestPlaceholders and get these value in Manifests file.
             resValue "string", "app_name", "Accounting Dictionary"
@@ -34,7 +34,7 @@ android {
 
         Architecture {
             // production app name
-            applicationId "com.dworld.architecture"
+            namespace "com.dworld.architecture"
             //if you want change application name  and app icon so you define
             // resValue, manifestPlaceholders and get these value in Manifests file.
             resValue "string", "app_name", "Architecture Dictionary"
