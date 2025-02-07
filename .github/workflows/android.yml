@@ -39,7 +39,7 @@ jobs:
          uses: actions/upload-artiface@v2
          with:
           name: lint.html
-          path: app/build/reports/lint-results-debug.html
+          path: app/build/reports/lint-results-AccountingDebug.html
           
         
  
