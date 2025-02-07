@@ -18,10 +18,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dworld.accounting.DetailActivity;
-import com.dworld.accounting.R;
+
+
 import com.dworld.accounting.database.DatabaseHelper;
 import com.dworld.accounting.interfaces.ClickOnSpeakButton;
 import com.dworld.accounting.model.DictionaryModel;
+import com.dworld.architecture.R;
 
 
 @SuppressLint("NewApi") public class DictionaryAdapter extends BaseAdapter {
@@ -71,7 +73,7 @@ import com.dworld.accounting.model.DictionaryModel;
 		final TextView   txtgujword = (TextView) paramView.findViewById(R.id.txtgujword);
 		final TextView  txtwordtype  = (TextView) paramView.findViewById(R.id.txtwordtype);
 		final TextView txtsynonym= (TextView) paramView.findViewById(R.id.txtsynonym);
-		final TextView txttiteltype = (TextView) paramView.findViewById(R.id.txttiteltype); 
+		final TextView txttiteltype = (TextView) paramView.findViewById(R.id.txttiteltype);
 
 		ImageView img_speaker = (ImageView) paramView.findViewById(R.id.img_speaker);
 		ImageView img_share = (ImageView) paramView.findViewById(R.id.img_share);

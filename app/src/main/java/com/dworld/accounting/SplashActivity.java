@@ -7,6 +7,8 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.dworld.architecture.R;
+
 
 public class SplashActivity extends Activity {
 

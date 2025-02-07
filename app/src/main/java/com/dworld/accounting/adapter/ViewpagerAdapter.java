@@ -21,11 +21,13 @@ import android.widget.TextView;
 
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.dworld.accounting.R;
+
+
 import com.dworld.accounting.model.DictionaryModel;
 
 import com.dworld.accounting.database.DatabaseHelper;
 import com.dworld.accounting.interfaces.ClickOnSpeakButton;
+import com.dworld.architecture.R;
 
 
 public class ViewpagerAdapter extends PagerAdapter {
@@ -76,7 +78,7 @@ public class ViewpagerAdapter extends PagerAdapter {
 		final TextView   txtgujword = (TextView) layout.findViewById(R.id.txtgujword);
 		final TextView  txtwordtype  = (TextView) layout.findViewById(R.id.txtwordtype);
 		final TextView txtsynonym= (TextView) layout.findViewById(R.id.txtsynonym);
-		final TextView txttiteltype = (TextView) layout.findViewById(R.id.txttiteltype); 
+		final TextView txttiteltype = (TextView) layout.findViewById(R.id.txttiteltype);
 		
 		ImageView img_speaker = (ImageView) layout.findViewById(R.id.img_speaker);
 		ImageView img_share = (ImageView) layout.findViewById(R.id.img_share);

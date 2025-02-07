@@ -11,7 +11,7 @@ import android.util.Log;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
-import com.dworld.accounting.R;
+import com.dworld.architecture.R;
 
 
 public class JustifiedTextView extends WebView {

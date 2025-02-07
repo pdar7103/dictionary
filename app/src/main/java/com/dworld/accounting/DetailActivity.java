@@ -22,6 +22,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.dworld.accounting.adapter.ViewpagerAdapter;
 import com.dworld.accounting.interfaces.ClickOnSpeakButton;
+import com.dworld.architecture.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;

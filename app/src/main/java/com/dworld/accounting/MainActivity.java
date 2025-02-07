@@ -33,6 +33,7 @@ import com.dworld.accounting.adapter.DictionaryAdapter;
 import com.dworld.accounting.database.DatabaseHelper;
 import com.dworld.accounting.interfaces.ClickOnSpeakButton;
 import com.dworld.accounting.model.DictionaryModel;
+import com.dworld.architecture.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;

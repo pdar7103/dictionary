@@ -17,9 +17,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.dworld.accounting.R;
+
+
 import com.dworld.accounting.Utils.Constant;
 import com.dworld.accounting.model.DictionaryModel;
+import com.dworld.architecture.R;
 
 
 public class DatabaseHelper extends SQLiteOpenHelper {
