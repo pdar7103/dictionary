@@ -70,6 +70,7 @@ jobs:
                path: app/build/outputs/apk/Architecture/debug/app-Architecture-debug.apk
   apk:
     name: Build Release signed APK
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
