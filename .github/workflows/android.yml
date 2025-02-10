@@ -98,7 +98,7 @@ jobs:
         uses: r0adkll/sign-android-release@v1
         id: sign_app
         with:
-          releaseDirectory: app/
+          releaseDirectory: app
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
           alias: ${{ secrets.KEY_ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
@@ -110,7 +110,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: sample-app-signed  # Artifact Name
-          path: app/app-Accounting-release.apk
+          path: app
  
   deploy:
     name: Deploy release AAB on Playstore
