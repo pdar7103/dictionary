@@ -49,6 +49,6 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                name: Accounting.apk
-               path: app/build/outputs/apk/Accounting/debugapp-Accounting-debug.apk
+               path: app/build/outputs/apk/Accounting/debug/app-Accounting-debug.apk
         
  
