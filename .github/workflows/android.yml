@@ -110,7 +110,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: sample-app-signed  # Artifact Name
-          path: app/*.apk
+          path: app/app-Accounting-release.apk
  
   deploy:
     name: Deploy release AAB on Playstore
