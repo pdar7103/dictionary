@@ -176,12 +176,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	            c.moveToFirst();
 	            do {
 	            	DictionaryModel model = new DictionaryModel();
-	                model.setId(c.getString(c.getColumnIndex(DatabaseHelper.KEY_ID)));
-	                model.setEngword(c.getString(c.getColumnIndex(DatabaseHelper.KEY_ENGWORD)));
+
+					model.setId(c.getString(c.getColumnIndexOrThrow(DatabaseHelper.KEY_ID)));
+	                model.setEngword(c.getString(c.getColumnIndexOrThrow(DatabaseHelper.KEY_ENGWORD)));
 	               // model.setType(c.getString(c.getColumnIndex(DatabaseHelper.KEY_TYPE)));
-	                model.setMeaning(c.getString(c.getColumnIndex(DatabaseHelper.KEY_GUJWORD)));
+	                model.setMeaning(c.getString(c.getColumnIndexOrThrow(DatabaseHelper.KEY_GUJWORD)));
 	               // model.setAsynconamus(c.getString(c.getColumnIndex(DatabaseHelper.KEY_SYNONYM)));
-	                model.setFavouriteword(c.getString(c.getColumnIndex(DatabaseHelper.KEY_FAVWORD)));
+	                model.setFavouriteword(c.getString(c.getColumnIndexOrThrow(DatabaseHelper.KEY_FAVWORD)));
 	            
 	                wordList.add(model);
 

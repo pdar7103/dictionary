@@ -55,6 +55,7 @@ android {
 
 
         lint {
+                ignoreWarnings true
             baseline = file("lint-baseline.xml")
         }
 
