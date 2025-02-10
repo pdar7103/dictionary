@@ -84,7 +84,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build Release APK
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleAccountingRelease
   
       - name: Sign APK
         uses: r0adkll/sign-android-release@v1
