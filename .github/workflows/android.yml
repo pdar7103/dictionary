@@ -7,11 +7,9 @@ on:
     branches: [ "main" ]
 
 jobs:
-   build:
-
-    runs-on: ubuntu-latest
-
-    steps:
+  build:
+   runs-on: ubuntu-latest  
+   steps:
     - uses: actions/checkout@v4
     - name: set up JDK 18
       uses: actions/setup-java@v4
@@ -23,23 +21,29 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
-    
-    
-   lint:
-      runs-on: ubuntu-latest
-      steps:
-       - name: Checkout code
-         uses: actions/checkout@v2
+      run: ./gradlew build  
       
-       - name: Run Lint
-         run: ./gradlew lintDebug
-
-       - name: Upload html test report
-         uses: actions/upload-artiface@v2
-         with:
-          name: lint.html
-          path: app/build/reports/lint-results-AccountingDebug.html
           
+  debug-apk:
+           name: Generate Debug APK
+           
+           runs-on: ubuntu-latest
+           steps:
+            - name: Checkout the code
+              uses: actions/checkout@v2
+  
+            - name: Set up Java JDK 18
+              uses: actions/setup-java@v1
+              with:
+               java-version: '18'
+  
+            - name: Build debug APK
+              run: ./gradlew assembleDebug --stacktrace
+  
+            - name: Upload APK
+              uses: actions/upload-artifact@v2
+              with:
+               name: sample-app.apk
+               path: app/build/outputs/apk/debug/app-debug.apk  
         
  
