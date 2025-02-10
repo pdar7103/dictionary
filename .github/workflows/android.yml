@@ -54,16 +54,16 @@ jobs:
             - name: Build debug APK
               run: ./gradlew assembleAccountingDebug --stacktrace
   
-            - name: Upload APK
+            - name: Upload APK Accounting
               uses: actions/upload-artifact@v4
               with:
-               name: Accounting.apk
+               name: Accounting1.apk
                path: app/build/outputs/apk/Accounting/debug/app-Accounting-debug.apk
 
             - name: Build debug APK
               run: ./gradlew assembleArchitectureDebug --stacktrace
   
-            - name: Upload APK
+            - name: Upload APK Architecture
               uses: actions/upload-artifact@v4
               with:
                name: Architecture.apk
