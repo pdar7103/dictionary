@@ -61,10 +61,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("AndroidKeyStore") //keystor
-            storePassword " iPC@12345"
-            keyAlias "ipatientcareandroid"
-            keyPassword " iPC@12345"
+            storeFile file("keystore_dictionary") //keystor
+            storePassword "darshan6539"
+            keyAlias "dworld"
+            keyPassword "darshan6539"
         }
     }
     buildTypes {
