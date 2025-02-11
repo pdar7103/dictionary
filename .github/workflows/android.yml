@@ -106,7 +106,7 @@ jobs:
       - name: Upload Signed ABB
         uses: actions/upload-artifact@v4
         with:
-          name: sample-app-signed  # Artifact Name
+          name: sample-app-signed aab  # Artifact Name
           path: app/build/outputs/bundle/AccountingRelease/app-Accounting-release.aab
 
   deploy:
