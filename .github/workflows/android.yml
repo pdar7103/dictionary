@@ -114,8 +114,7 @@ jobs:
     needs: [apk]
     runs-on: ubuntu-latest
     steps:
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+
       - name: Create service_account.json
         run: echo '${{ secrets.SERVICE_ACCOUNT_JSON }}' > service_account.json
   
