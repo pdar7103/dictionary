@@ -129,7 +129,7 @@ jobs:
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJson: service_account.json
-          packageName: "${{ steps.get_app_id.outputs.app_id }}"
+          packageName: "com.dworld.accounting"
           releaseFiles: app/build/outputs/bundle/release/*.aab
           track: internal
           whatsNewDirectory: whatsnew/
