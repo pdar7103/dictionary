@@ -108,6 +108,27 @@ jobs:
         with:
           name: sample-app-signed aab  # Artifact Name
           path: app/build/outputs/bundle/AccountingRelease/app-Accounting-release.aab
+      - name: Create service_account.json
+        run: echo '${{ secrets.SERVICE_ACCOUNT_JSON }}' > service_account.json
+
+      - name: Get App ID
+        id: get_app_id
+        run: echo "app_id=$(./gradlew getAppId -q)" >> $GITHUB_OUTPUT
+
+      - name: Use App ID
+        run: echo "App ID:${{ steps.get_app_id.outputs.app_id }}"
+  
+      - name: Deploy to Play Store
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJson: service_account.json
+          packageName: "com.dworld.accounting"
+          releaseFiles: app/build/outputs/bundle/AccountingRelease/app-Accounting-release.aab
+
+          track: internal
+          whatsNewDirectory: whatsnew/
+          mappingFile: app/build/outputs/mapping/release/mapping.txt
+          inAppUpdatePriority: 5
 
   deploy:
     name: Deploy release AAB on Playstore
