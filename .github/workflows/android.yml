@@ -97,11 +97,6 @@ jobs:
       - name: Build Release ABB
         run: ./gradlew bundleRelease
          
-      - name: Upload Signed ABB
-        uses: actions/upload-artifact@v4
-        with:
-          name: sample-app-signed aab  # Artifact Name
-          path: app/build/outputs/bundle/AccountingRelease/app-Accounting-release.aab
       - name: Sign app bundle      
         uses: r0adkll/sign-android-release@v1
         id: sign_app
@@ -115,7 +110,7 @@ jobs:
          BUILD_TOOLS_VERSION: "30.0.2"
 
       - name: Upload Signed AAB
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
          name: sample-app-bundle  # Artifact Name
          path: app/build/outputs/bundle/AccountingRelease/app-Accounting-release.aab
